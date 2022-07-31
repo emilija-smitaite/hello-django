@@ -4,6 +4,7 @@ from .forms import ItemForm
 # Create your tests here.
 
 class TestItemForm(TestCase):
+    """Tests form"""
 
     def test_item_name_is_required(self):
         form = ItemForm({"name": ""})
